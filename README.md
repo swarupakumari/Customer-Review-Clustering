@@ -1,3 +1,102 @@
+📊 Customer Review Clustering for Market Research
+🚀 Project Overview
+
+This project applies Unsupervised Machine Learning (K-Means Clustering) to analyze Amazon customer reviews and group similar feedback patterns.
+
+The goal is to identify meaningful clusters in customer reviews to help businesses understand product perception and customer behavior.
+
+🎯 Objective
+
+Analyze real-world Amazon review dataset
+
+Perform text preprocessing and feature engineering
+
+Apply K-Means clustering to group similar reviews
+
+Extract actionable insights for market research
+
+🛠 Tech Stack
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+
+📁 Repository Structure
+Customer-Review-Clustering/
+│
+├── Clustering_customer_reviews.ipynb
+├── amazon.csv
+├── requirements.txt
+└── README.md
+▶️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/swarupakumari/Customer-Review-Clustering.git
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Open Jupyter Notebook:
+
+jupyter notebook
+
+Run Clustering_customer_reviews.ipynb
+
+
+⚙️ Project Workflow
+1️⃣ Data Cleaning & Preprocessing
+
+Removed missing/null values
+
+Cleaned and formatted text columns
+
+Converted price values to numeric format
+
+Feature selection for clustering
+
+2️⃣ Exploratory Data Analysis (EDA)
+
+Distribution analysis of product categories
+
+Pricing trends visualization
+
+Basic statistical insights
+
+3️⃣ Feature Engineering
+
+Selected relevant numerical features
+
+Scaled data using standardization
+
+Prepared dataset for clustering
+
+4️⃣ K-Means Clustering
+
+Implemented K-Means algorithm using Scikit-learn
+
+Used Elbow Method to determine optimal number of clusters
+
+Assigned cluster labels to products
+
+5️⃣ Visualization
+
+Visualized clusters using scatter plots
+
+Compared cluster characteristics
+
+
+
 # Clustering-of-customer-reviews-for-market-research
 1) OBJECTIVE
 To analyze and cluster customer reviews to identify common themes, sentiments, and patterns in customer feedback, thereby enabling businesses to make informed decisions to improve products, services, and customer experience.
