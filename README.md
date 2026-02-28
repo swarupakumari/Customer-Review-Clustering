@@ -1,19 +1,19 @@
 📊 Customer Review Clustering for Market Research
 🚀 Project Overview
 
-This project applies Unsupervised Machine Learning (K-Means Clustering) to analyze Amazon customer reviews and group similar feedback patterns.
+This project applies Unsupervised Machine Learning (K-Means Clustering) to analyze Amazon product data and group similar products based on patterns in pricing, category, and review-related features.
 
-The goal is to identify meaningful clusters in customer reviews to help businesses understand product perception and customer behavior.
+The objective is to identify meaningful clusters that help businesses understand product positioning, customer perception, and market segmentation.
 
 🎯 Objective
 
-Analyze real-world Amazon review dataset
+Analyze real-world Amazon dataset
 
-Perform text preprocessing and feature engineering
+Perform data cleaning and preprocessing
 
-Apply K-Means clustering to group similar reviews
+Apply K-Means clustering to group similar products
 
-Extract actionable insights for market research
+Extract actionable insights for business decision-making
 
 🛠 Tech Stack
 
@@ -29,7 +29,6 @@ Matplotlib
 
 Seaborn
 
-
 📁 Repository Structure
 Customer-Review-Clustering/
 │
@@ -38,56 +37,50 @@ Customer-Review-Clustering/
 ├── requirements.txt
 └── README.md
 ▶️ How to Run
-
-Clone the repository:
-
+1️⃣ Clone the repository
 git clone https://github.com/swarupakumari/Customer-Review-Clustering.git
-
-Install dependencies:
-
+2️⃣ Install dependencies
 pip install -r requirements.txt
-
-Open Jupyter Notebook:
-
+3️⃣ Run the notebook
 jupyter notebook
 
-Run Clustering_customer_reviews.ipynb
-
+Open:
+Clustering_customer_reviews.ipynb
 
 ⚙️ Project Workflow
 1️⃣ Data Cleaning & Preprocessing
 
 Removed missing/null values
 
-Cleaned and formatted text columns
+Cleaned and formatted dataset columns
 
-Converted price values to numeric format
+Converted price values into numeric format
 
-Feature selection for clustering
+Selected relevant features for clustering
 
 2️⃣ Exploratory Data Analysis (EDA)
 
-Distribution analysis of product categories
+Analyzed distribution of product categories
 
-Pricing trends visualization
+Visualized pricing trends
 
-Basic statistical insights
+Extracted basic statistical insights
 
 3️⃣ Feature Engineering
 
-Selected relevant numerical features
+Selected meaningful numerical features
 
-Scaled data using standardization
+Applied feature scaling (standardization)
 
-Prepared dataset for clustering
+Prepared structured dataset for model training
 
 4️⃣ K-Means Clustering
 
 Implemented K-Means algorithm using Scikit-learn
 
-Used Elbow Method to determine optimal number of clusters
+Used the Elbow Method to determine optimal number of clusters
 
-Assigned cluster labels to products
+Assigned cluster labels to each product
 
 5️⃣ Visualization
 
@@ -95,41 +88,43 @@ Visualized clusters using scatter plots
 
 Compared cluster characteristics
 
+Interpreted segmentation patterns
 
+📌 Scope & Business Impact
+🔹 Customer Grouping
 
-# Clustering-of-customer-reviews-for-market-research
-1) OBJECTIVE
-To analyze and cluster customer reviews to identify common themes, sentiments, and patterns in customer feedback, thereby enabling businesses to make informed decisions to improve products, services, and customer experience.
+Clustering helps group similar products or customer behavior patterns, enabling better market segmentation.
 
-2) Here’s the scope of clustering customer reviews in simple terms: 
+🔹 Understanding Customer Sentiment Trends
 
-Grouping Customers: Clustering helps in grouping customers with similar opinions or behaviors. This makes it easier to 
-                    understand different types of customers. 
+Helps identify what customers prefer or dislike based on grouped patterns.
 
-Understanding Feelings: By clustering reviews, businesses can see what customers like or dislike. This helps in knowing how 
-                    happy customers are and what needs to be improved. 
+🔹 Product Improvement
 
-Better Marketing: With clustered data, companies can create more personalized ads and offers that appeal to specific groups 
-                    of customers. 
+Common feature trends across clusters reveal improvement opportunities.
 
-Improving Products: Clustering can show common problems or desired features in products, guiding businesses to make better 
-                    products. 
+🔹 Better Marketing Strategies
 
-Enhancing Service: Knowing different customer groups helps in providing better service, making customers happier and more 
-                    loyal. 
+Cluster-based segmentation allows personalized marketing campaigns.
 
-Spotting Trends: Clustering can reveal new trends and changes in customer preferences, helping businesses stay ahead.
+🔹 Trend Identification
 
-3)Algorithm(KMeans)
+Detects pricing tiers (budget, mid-range, premium) and evolving market patterns.
 
-K-Means Clustering is an unsupervised learning algorithm that is used to solve the clustering problems in machine learning.
-The main aim of this algorithm is to minimize the sum of distances between the data point and their corresponding clusters.
-How does the K-Means Algorithm Work? The working of the K-Means algorithm is explained in the below steps:
+🧠 About the Algorithm – K-Means
 
-Step-1: Select the number K to decide the number of clusters.
-Step-2: Select random K points or centroids. (It can be other from the input dataset).
-Step-3: Assign each data point to their closest centroid, which will form the predefined K clusters.
-Step-4: Calculate the average and place a new centroid of each cluster.
-Step-5: Repeat the third steps, until we don't get a saturation point ........ 
-Step-6: Now the centroid point will be terms as mean centroid value.
-Step-7: The model is ready.
+K-Means Clustering is an unsupervised learning algorithm used to group similar data points into clusters.
+
+🔎 Working of K-Means Algorithm:
+
+1.Select the number of clusters (K)
+
+2.Randomly initialize K centroids
+
+3.Assign each data point to the nearest centroid
+
+4.Recalculate centroids as the mean of assigned points
+
+5.Repeat assignment and update steps until centroids stabilize
+
+6.Final clusters represent grouped data patterns
